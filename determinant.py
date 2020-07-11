@@ -2,9 +2,11 @@
 def cofactor(matrix, row, col):
     sol = []
     for i in range(len(matrix)):
+        if i==row:
+            continue
         vector = []
         for j in range(len(matrix)):
-            if (i!=row and j != col):
+            if (j != col):
                 vector.append(matrix[i][j])
 
         if (len(vector)):
