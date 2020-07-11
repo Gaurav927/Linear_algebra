@@ -39,17 +39,3 @@ def rankOfMatrix(matrix):
 matrix = [[1,2,3,5],[1,2,3,5],[10,16,17,19],[10,23,17,19]]
 
 print("Rank of given matrix is {}".format(rankOfMatrix(matrix)))
-
-
-            
-
-
-
-
-
-
-
-
-
-
-
