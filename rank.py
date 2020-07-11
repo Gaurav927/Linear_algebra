@@ -21,7 +21,7 @@ def rankOfMatrix(matrix):
 
     for i in range(row):
         if nonZero(matrix[i][i]):
-            for j in range(col):
+            for j in range(min(col,row)):
                 if j!=i:
                     reduction(matrix, i, j)
         else:
