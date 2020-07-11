@@ -17,7 +17,7 @@ def reduction(matrix, i_base , j):
 def rankOfMatrix(matrix):
     row, col = len(matrix), len(matrix[0])
 
-    count = col
+    count = min(col,row)
 
     for i in range(row):
         if nonZero(matrix[i][i]):
