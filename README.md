@@ -1,4 +1,4 @@
-# numerical_linear_algebra
+# Linear Algebra
 
 Analysis & Implementation of following standard Linear Algebra algorithms 
 
