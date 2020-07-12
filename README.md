@@ -2,7 +2,7 @@
 
 Analysis & Implementation of following standard Linear Algebra algorithms 
 
-|sl.no| Topics | Algorithms | Running time
+|#| Topics | Algorithms | Running time
 |-----------| ----------- | ----------- | ----------- |
 |1.a| Determinant of matrix | Cramer's rule |  O(n<sup>4</sup>)|
 |1.b| Determinant of matrix | Row reduction |  O(n<sup>3</sup>)|
