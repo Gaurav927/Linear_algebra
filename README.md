@@ -1,6 +1,6 @@
 # Linear Algebra
 
-Analysis & Implementation of following standard Linear Algebra algorithms 
+Analysis & Implementation of the following standard Linear Algebra algorithms 
 
 |#| Topics | Algorithms | Running time
 |-----------| ----------- | ----------- | ----------- |
