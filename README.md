@@ -9,7 +9,7 @@ Analysis & Implementation of the following standard Linear Algebra algorithms
 |2| Rank of Matrix | Row reduction | O(n<sup>3</sup>) |
 |3| Finding Inverse of Matrix | Elimination | O(n<sup>3</sup>) |
 |4.a|Solving eqn (det>0 or single solution) | Elimination | O(n<sup>3</sup>) |
-|4.b|Solving eqn (unsolvable or best approx soln) | least square | O(nT) |
+|4.b|Solving eqn (unsolvable or best approx soln) | least square | O(n<sup>2</sup>T) |
 |5| Eigen value calculation |  |  |
 |6| Grahm Schmidt |  |  |
 |7|Singular value decomposition |  |  |
