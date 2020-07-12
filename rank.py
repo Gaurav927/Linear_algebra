@@ -19,7 +19,8 @@ def rankOfMatrix(matrix):
 
     count = min(col,row)
 
-    for i in range(row):
+    i =0
+    while(i<row):
         if nonZero(matrix[i][i]):
             for j in range(min(col,row)):
                 if j!=i:
@@ -30,10 +31,11 @@ def rankOfMatrix(matrix):
                 if nonZero(matrix[k][i]):
                     swapRow(matrix, k, i)
                     swap = True
+                    i = i - 1
                     break
             if (not swap):
                 count -=1
-            i = i - 1
+        i = i + 1
     return count
 
 matrix = [[1,2,3,5],[1,2,3,5],[10,16,17,19],[10,23,17,19]]
