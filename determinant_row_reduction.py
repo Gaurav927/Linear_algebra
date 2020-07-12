@@ -17,7 +17,7 @@ def reduction(matrix, i_base , j):
 
 def determinant(matrix):
     row= len(matrix)
-    count = row
+    
     i =0
     while(i<row):
         if nonZero(matrix[i][i]):
@@ -34,12 +34,13 @@ def determinant(matrix):
                     i = i - 1
                     break
             if not swap:
-                count-=1
+                return 0
         i = i + 1
+        
     det = 1
     for i in range(row):
-        det =det*matrix[i][i]
-    return det if count ==row else 0
+        det =det*matrix[i][i] # det( upper triangular matrix) equal to product of diagonal elemnets
+    return det 
 
 
 matrix = [[1,2,3,5],[1,2,3,9],[10,16,17,19],[10,23,17,19]]
