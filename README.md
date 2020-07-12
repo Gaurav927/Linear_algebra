@@ -13,4 +13,8 @@ Analysis & Implementation of following standard Linear Algebra algorithms
 
 
 Other numerical techniques
+| Syntax | Description |
+| ----------- | ----------- |
+| Header | Title |
+| Paragraph | Text |
 
