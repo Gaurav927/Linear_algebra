@@ -11,7 +11,7 @@ Analysis & Implementation of the following standard Linear Algebra algorithms
 |4.a|Solving eqn (det>0 or single solution) | Elimination | O(n<sup>3</sup>) |
 |4.b|Solving eqn (unsolvable or best approx soln) | least square | O(nmT) |
 |5| Eigen value calculation |  |  |
-|6| Grahm Schmidt |  |  |
+|6| Grahm Schmidt |  | O(n<sup>3</sup>) |
 |7|Singular value decomposition |  |  |
 |8| PCA implementation |  |  |
 
