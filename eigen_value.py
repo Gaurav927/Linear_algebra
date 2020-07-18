@@ -2,6 +2,7 @@ import gram_schmidt
 import numpy as np
 from numpy import linalg as LA
 
+# use gram_schmidt function & the concept of similar matrix to calculate eigen values
 def iterate(A):
     A = np.array(A)
     for _ in range(20):
