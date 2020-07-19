@@ -1,3 +1,10 @@
+---
+layout: tutorial
+title: "Using MathJax in Jekyll"
+date: 2018-07-10
+tags: [MathJax, Mathematic]
+mathjax: true
+---
 
 # Linear Algebra
 Analysis & Implementation of the following standard Linear Algebra algorithms 
