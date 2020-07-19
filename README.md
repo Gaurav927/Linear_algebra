@@ -16,4 +16,4 @@ Analysis & Implementation of the following standard Linear Algebra algorithms
 |8|Singular value decomposition |  |  |
 |9| PCA implementation |  |  |
 
-$$`a^2+b^2=c^2`$$
+
