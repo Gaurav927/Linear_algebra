@@ -1,10 +1,3 @@
----
-layout: tutorial
-title: "Using MathJax in Jekyll"
-date: 2018-07-10
-tags: [MathJax, Mathematic]
-mathjax: true
----
 
 # Linear Algebra
 Analysis & Implementation of the following standard Linear Algebra algorithms 
@@ -25,4 +18,3 @@ Analysis & Implementation of the following standard Linear Algebra algorithms
 
 
 
-https://latex.codecogs.com/gif.latex?\begin{pmatrix}&space;a&space;&&space;b&space;\\&space;c&space;&&space;d&space;\end{pmatrix}
