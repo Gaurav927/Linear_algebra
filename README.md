@@ -24,4 +24,4 @@ Analysis & Implementation of the following standard Linear Algebra algorithms
 |9| PCA implementation |  |  |
 
 
-$$\begin{pmatrix} a & b \\ c & d \end{pmatrix}$$
+
