@@ -1,8 +1,7 @@
 import eigen_value
-
 import rank
 import numpy as np
-
+from numpy import linalg as LA
 
 # Assuming Ax=b assuming full rank matrix (or determinant of matrix>0)
 def swapRow(matrix, i, j):
@@ -53,24 +52,32 @@ def get_soln(matrix):
     vector = [0]*len(matrix)
     _rank = rank.rankOfMatrix(matrix)
 
-    for i in range(len(matrix)-1,len(matrix)-_rank-1,-1):
-        vector[i] =1
+    for i in range(len(matrix)-1,_rank-1,-1):
+        vector[i] =1.0
 
     for i in range(_rank-1,-1,-1):
         b = matrix[i][-1]
         rest =  matrix[i][:-1]
 
         c = get_dot(vector,rest, i)
-        x = (b-c)/rest[i]
+        x = (b-c)/rest[i] if rest[i]!=0 else 0
         vector[i] = x
 
     return vector
+
+def _round(matrix):
+    for i in range(len(matrix)):
+        for j in range(len(matrix[0])):
+            matrix[i][j] = round(matrix[i][j],4)
+    return 
 
 def solve(A,b):
     for i in range(len(b)):
         A[i].append(b[i])
     
     matrix = elimination(A)
+    _round(matrix)
+    
     return get_soln(matrix)
 
 def eigen_vector(A):
@@ -85,7 +92,6 @@ def eigen_vector(A):
         identity = np.identity(len(A))
         matrix = A - val*identity
         matrix = matrix.tolist()
-
         sol.append(solve(matrix,b))
     
     return sol
